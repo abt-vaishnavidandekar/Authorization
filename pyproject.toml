@@ -1,0 +1,33 @@
+[project]
+name = "authorization"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "abt-vaishnavidandekar", email = "abt.vaishnavidandekar@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "alembic>=1.20.0",
+    "asyncio>=4.0.0",
+    "fastapi>=0.143.0",
+    "passlib[argon2]>=1.7.4",
+    "psycopg[binary]>=3.3.6",
+    "pwdlib[argon2]>=0.3.1",
+    "pydantic[email]>=2.14.0",
+    "pyjwt>=2.15.1",
+    "python-dotenv>=1.2.4",
+    "python-jose>=3.5.0",
+    "python-multipart>=0.0.32",
+    "redis>=8.1.0",
+    "ruff>=0.16.10",
+    "sqlalchemy[asyncio]>=2.1.4",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+authorization = "authorization:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
